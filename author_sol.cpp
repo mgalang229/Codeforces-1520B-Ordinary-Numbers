@@ -11,7 +11,7 @@ int main() {
 		int n;
 		cin >> n;
 		int res = 0;
-		// outer loop = numbers with repeatings digits of 1 (i.e., {1, 11, 111, ..., n})
+		// outer loop = numbers with repeating digits of 1 (i.e., {1, 11, 111, ..., n})
 		for (long long pw = 1; pw <= n; pw = pw * 10 + 1) {
 			// inner loop = numbers from 1 to 9 (inclusive)
 			// count the number of products of 'pw' and 'd', and check if it's 
